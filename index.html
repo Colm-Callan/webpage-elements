@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GradedAssignment</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 mt-3">
+				<section class="p p-2 h-100">
+					<table>
+						<tr>
+							<th>a</th>
+							<th>e</th>
+							<th>i</th>
+							<th>o</th>
+							<th>u</th>
+						</tr>
+						<tr>
+							<td id="aCount"> 0 </td>
+							<td id="eCount"> 0 </td>
+							<td id="iCount"> 0 </td>
+							<td id="oCount"> 0 </td>
+							<td id="uCount"> 0 </td>
+						</tr>
+					</table>
+				</section>
+			</div>
+			<div class="col-md-6 mt-3">
+				<section onclick="removeLastWord()"  id="para" class="p-2 h-100">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac semper lorem. In sed augue non
+					quam ultricies euismod. In eget mattis ex. Donec suscipit, arcu sit amet rhoncus tempor, felis orci
+					fermentum odio, at sollicitudin diam dui quis felis. Orci varius natoque penatibus et magnis dis
+					parturient montes, nascetur ridiculus mus. Nunc eu augue id eros tincidunt eleifend. Phasellus quis
+					odio vel massa volutpat volutpat id ut justo. Praesent venenatis tristique mauris vitae scelerisque.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu sem vel nisi lobortis iaculis.
+					Curabitur lacinia sit amet elit eu vulputate. Orci varius natoque.
+				</section>
+			</div>
+			<div class="col-md-3 mt-3">
+				<section class="p-2 h-100">
+					<img src="tudimg.png">
+				</section>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 mt-3">
+				<section id="changeone" class="border bg-warning p-2 h-100 text-center">
+					one
+				</section>
+			</div>
+			<div class="col-md-4 mt-3">
+				<section class="border bg-primary p-2 h-100 text-center">
+					two
+				</section>
+			</div>
+			<div class="row">
+				<div class="col-md-3 mt-3">
+					<section class="border bg-danger p-2 h-100 text-center">
+						three
+					</section>
+				</div>
+				<div class="col-md-6 mt-3">
+					<section class="border bg-success p-2 h-100 text-center">
+						four
+					</section>
+				</div>
+				<div class="col-md-3 mt-3">
+					<section class="border bg-info p-2 h-100 text-center">
+						five
+					</section>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<button onclick="ChangeOne()">Change one</button>
+		<button id="uppercase" onclick="Upper()">Text to uppercase</button>
+
+		<hr>
+		<textarea id="textArea" rows="5" cols="50" class="align-bottom" placeholder="Enter new paragraph text"></textarea>
+		<button onclick="ModPara()">modify paragraph</button>
+		<hr>
+		<p><textarea id="inputColor" class="align-bottom" placeholder="Enter a color"></textarea><button onclick="changeColor()">change Background color</button></p>
+		<hr>
+		<button onclick="replaceBorderedElemenet('???')">change bordered element text</button>
+		<hr>
+		<p><span id="descSpan"></span></p>
+		<script src="main.js"></script>
+	</div>
+</body>
+
+</html>
